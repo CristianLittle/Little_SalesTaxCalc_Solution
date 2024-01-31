@@ -37,6 +37,7 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.txtMoney = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Lbl_Billy_Bobs
@@ -141,12 +142,21 @@
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
             // 
+            // txtMoney
+            // 
+            this.txtMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.txtMoney.Location = new System.Drawing.Point(323, 151);
+            this.txtMoney.Name = "txtMoney";
+            this.txtMoney.Size = new System.Drawing.Size(184, 30);
+            this.txtMoney.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(736, 545);
+            this.Controls.Add(this.txtMoney);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCalculate);
@@ -175,6 +185,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtMoney;
     }
 }
 
