@@ -38,6 +38,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtMoney = new System.Windows.Forms.TextBox();
+            this.TotalPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Lbl_Billy_Bobs
@@ -95,6 +96,7 @@
             this.ListWarranty.Name = "ListWarranty";
             this.ListWarranty.Size = new System.Drawing.Size(184, 29);
             this.ListWarranty.TabIndex = 4;
+            this.ListWarranty.SelectedIndexChanged += new System.EventHandler(this.ListWarranty_SelectedIndexChanged);
             // 
             // ListState
             // 
@@ -108,6 +110,7 @@
             this.ListState.Name = "ListState";
             this.ListState.Size = new System.Drawing.Size(74, 29);
             this.ListState.TabIndex = 5;
+            this.ListState.SelectedIndexChanged += new System.EventHandler(this.ListState_SelectedIndexChanged);
             // 
             // btnCalculate
             // 
@@ -119,6 +122,7 @@
             this.btnCalculate.TabIndex = 6;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = false;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // btnClear
             // 
@@ -130,6 +134,7 @@
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnExit
             // 
@@ -141,6 +146,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // txtMoney
             // 
@@ -149,6 +155,15 @@
             this.txtMoney.Name = "txtMoney";
             this.txtMoney.Size = new System.Drawing.Size(184, 30);
             this.txtMoney.TabIndex = 9;
+            this.txtMoney.TextChanged += new System.EventHandler(this.txtMoney_TextChanged);
+            // 
+            // TotalPrice
+            // 
+            this.TotalPrice.Location = new System.Drawing.Point(202, 406);
+            this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.Size = new System.Drawing.Size(318, 20);
+            this.TotalPrice.TabIndex = 10;
+            this.TotalPrice.TextChanged += new System.EventHandler(this.TotalPrice_TextChanged);
             // 
             // Form1
             // 
@@ -156,6 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(736, 545);
+            this.Controls.Add(this.TotalPrice);
             this.Controls.Add(this.txtMoney);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
@@ -186,6 +202,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtMoney;
+        private System.Windows.Forms.TextBox TotalPrice;
     }
 }
 
