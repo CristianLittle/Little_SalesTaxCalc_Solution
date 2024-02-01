@@ -14,11 +14,11 @@ namespace Little_SalesTaxCalc_Project
     public partial class Form1 : Form
     {
         double price;
-        double WATaxes = 0.086;
-        double ORTaxes = 0;
-        int OneYear = 1000;
-        int TwoYear = 2000;
-        int ThreeYear = 3000;
+        double wataxes = 0.086;
+        double ortaxes = 0;
+        int oneyear = 1000;
+        int twoyear = 2000;
+        int threeyear = 3000;
         public Form1()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace Little_SalesTaxCalc_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.LightGray;
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace Little_SalesTaxCalc_Project
 
         private void txtMoney_TextChanged(object sender, EventArgs e)
         {
-          double price = double.Parse(txtMoney.Text);
+           price = double.Parse(txtMoney.Text);
         }
 
         private void ListWarranty_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,7 +46,14 @@ namespace Little_SalesTaxCalc_Project
 
         private void ListState_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (ListState == WA)
+            {
+                WATaxes * price = double totalprice
+            }
+            else 
+            {
+                ortaxes* price = double orprice
+            }
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
@@ -66,7 +73,7 @@ namespace Little_SalesTaxCalc_Project
 
         private void TotalPrice_TextChanged(object sender, EventArgs e)
         {
-
+            display
         }
     }
 }
